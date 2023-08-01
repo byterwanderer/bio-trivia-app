@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import { createClient } from '@supabase/supabase-js';
 import logo from './images/apple-touch-icon-1.png';
+import logoText from './images/EASTWOOD_logos_2022--05.png';
 import './App.css';
 import { Container } from 'react-bootstrap';
 
@@ -85,15 +86,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <div className="logo-container">
-          <img src={logo} alt="Logo" className="logo" />
-        </div> */}
-      </header>
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" />
       </div>
-
+      <div className="logoText-container">
+        <img src={logoText} alt="LogoText" className="logoText" />
+      </div>
       <h1 className="app-title">Biology/Science Trivia</h1>
       <br />
 
